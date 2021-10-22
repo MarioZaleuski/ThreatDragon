@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "title": "Teste",
+    "owner": "MarioZaleuski"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "MarioZaleuski"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "DiagramaSeguranca",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
