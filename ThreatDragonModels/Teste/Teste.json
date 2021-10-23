@@ -13,7 +13,341 @@
       {
         "title": "DiagramaSeguranca",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 31,
+                "y": 35
+              },
+              "angle": 0,
+              "id": "f65c2446-b863-4c48-8876-c9270cea6a8c",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "usuario envia mensagem"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 302,
+                "y": 20
+              },
+              "angle": 0,
+              "id": "6c5b618e-ef62-4554-99c5-0dc64071a9bd",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "criptografa"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "f65c2446-b863-4c48-8876-c9270cea6a8c"
+              },
+              "target": {
+                "id": "6c5b618e-ef62-4554-99c5-0dc64071a9bd"
+              },
+              "vertices": [
+                {
+                  "x": 272,
+                  "y": 66
+                }
+              ],
+              "id": "aba50372-7eb1-42bf-9c43-e7b774db2f14",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.43978085556127006,
+                    "offset": 0.7634427906982011
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "mensagem",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 528,
+                "y": 28
+              },
+              "angle": 0,
+              "id": "a6827765-e43a-4e75-9a31-6101c2f16a75",
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "base de mensagens"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 558,
+                "y": 232
+              },
+              "angle": 0,
+              "id": "e1e7ca42-d7e5-4257-ac74-dd3975dc868f",
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "decriptografa"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "a6827765-e43a-4e75-9a31-6101c2f16a75"
+              },
+              "target": {
+                "id": "e1e7ca42-d7e5-4257-ac74-dd3975dc868f"
+              },
+              "vertices": [
+                {
+                  "x": 601,
+                  "y": 185
+                }
+              ],
+              "id": "f9a00ab2-efb9-48d3-b756-2ac70a3bc0a1",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "mensagem\ncriptografada",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 228,
+                "y": 246
+              },
+              "angle": 0,
+              "id": "eb794cc2-7d95-423b-ab1e-bda9bff140d1",
+              "z": 8,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "usuario recebe\nmensagem"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "e1e7ca42-d7e5-4257-ac74-dd3975dc868f"
+              },
+              "target": {
+                "id": "eb794cc2-7d95-423b-ab1e-bda9bff140d1"
+              },
+              "vertices": [
+                {
+                  "x": 446,
+                  "y": 279
+                }
+              ],
+              "id": "e4713b72-546e-4481-9fd2-c3c0a93fc8e0",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "mensagem\ndecriptografada",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 254,
+                "y": 9
+              },
+              "target": {
+                "x": 750,
+                "y": 360
+              },
+              "vertices": [
+                {
+                  "x": 287,
+                  "y": 168
+                },
+                {
+                  "x": 443,
+                  "y": 196
+                },
+                {
+                  "x": 521,
+                  "y": 196
+                },
+                {
+                  "x": 529,
+                  "y": 267
+                },
+                {
+                  "x": 550,
+                  "y": 360
+                }
+              ],
+              "id": "14988312-bb6e-41ea-a371-7e983d7c4562",
+              "z": 10,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "6c5b618e-ef62-4554-99c5-0dc64071a9bd"
+              },
+              "target": {
+                "id": "a6827765-e43a-4e75-9a31-6101c2f16a75"
+              },
+              "vertices": [
+                {
+                  "x": 485,
+                  "y": 64
+                }
+              ],
+              "id": "e4fb4ddd-6c73-4d82-bb4f-e13bf420a342",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "mensagem\ncriptografada",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 11,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 790
+        }
       }
     ]
   }
